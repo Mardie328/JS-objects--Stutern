@@ -84,3 +84,19 @@ console.log(musaBiodata);
 // // Using the spread operator
 // let clone3 = { ...circle };
 // console.log(clone3);
+
+// Question 5
+const presidentialCandidates = {
+  AAC: "Omoyele Sowore",
+  ACCORD: "Christopher Imumolen",
+  APC: "Bola Ahmed Tinubu",
+  LP: "Peter Obi",
+  NNPP: "Rabiu Kwankwaso",
+  PDP: "Atiku Abubakar",
+};
+
+for (let key in presidentialCandidates) {
+  console.log(
+    `${presidentialCandidates[key]} is the presidential candidate of ${key}`
+  );
+}
