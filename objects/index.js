@@ -61,9 +61,26 @@ function createJambScores(eng, govt, lit, crk) {
 }
 const musaJambScore = createJambScores(70, 85, 82, 94);
 console.log(musaJambScore);
-console.log(musaBiodata.musaJambScore);
+musaBiodata.jambScore = musaJambScore;
+console.log(musaBiodata);
 
 // Question 4
-// Using the "for in" loop
-// Using the "Object.assign()" method
-// Using the spread operator
+// // Using the "for in" loop
+// return {
+//   radius: 1,
+//   draw() {
+//     console.log("draw");
+//   },
+// };
+// let another = {};
+// for (let key in circle) {
+//   another[key] = circle[key];
+// }
+
+// // Using the "Object.assign()" method
+// let clone2 = Object.assign({}, circle);
+// console.log(clone2);
+
+// // Using the spread operator
+// let clone3 = { ...circle };
+// console.log(clone3);
