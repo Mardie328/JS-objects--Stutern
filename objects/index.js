@@ -1,6 +1,6 @@
 "use strict";
 
-// Question 1
+// // Question 1
 function InstagramPost(
   authorHandle,
   content,
@@ -15,7 +15,7 @@ function InstagramPost(
   this.numberOfLikes = numberOfLikes;
 }
 
-// Question 2
+// // Question 2
 // a.
 const InstagramPost1 = new InstagramPost(
   "Chimamanda",
@@ -38,7 +38,7 @@ const InstagramPost2 = new InstagramPost(
 
 console.log(InstagramPost2);
 
-// Question 3
+// // Question 3
 // a.
 function createPerson(name, age, location) {
   return {
@@ -64,28 +64,45 @@ console.log(musaJambScore);
 musaBiodata.jambScore = musaJambScore;
 console.log(musaBiodata);
 
-// Question 4
-// // Using the "for in" loop
-// return {
-//   radius: 1,
-//   draw() {
-//     console.log("draw");
-//   },
-// };
-// let another = {};
-// for (let key in circle) {
-//   another[key] = circle[key];
-// }
+// // Question 4
+// Using the "for in" loop
+let studentClone = {};
+const student = {
+  firstName: "Mardiyyah",
+  lastName: "Taofeek",
+  school: "stutern",
+  futureAmbition: "Software engineer",
+};
 
-// // Using the "Object.assign()" method
-// let clone2 = Object.assign({}, circle);
-// console.log(clone2);
+for (let key in student) {
+  studentClone[key] = student[key];
+}
 
-// // Using the spread operator
-// let clone3 = { ...circle };
-// console.log(clone3);
+console.log(studentClone);
 
-// Question 5
+// Using the "Object.assign()" method
+let studentClone2 = {};
+const student2 = {
+  firstName: "Jola",
+  lastName: "Ariyo",
+  school: "stutern",
+  futureAmbition: "Baker",
+};
+studentClone2 = Object.assign(student2);
+console.log(studentClone2);
+
+// Using the spread operator
+let studentClone3 = {};
+const student3 = {
+  firstName: "Aliyah",
+  lastName: "Alade",
+  school: "stutern",
+  futureAmbition: "Designer",
+};
+studentClone3 = { ...student3 };
+console.log(studentClone3);
+
+// // Question 5
 const presidentialCandidates = {
   AAC: "Omoyele Sowore",
   ACCORD: "Christopher Imumolen",
